@@ -1,0 +1,10 @@
+MEMORIA
+
+1. He dado un nombre a la empresa con una etiqueta de Título Principal <h1>.
+2. Debajo he colocado el nombre de las cuatro secciones de la página web a la misma altura.Cada una como un título de nivel superior <h2> y con un enlace al comienzo de su sección.
+3. A continuación he desarrollado el contenido de cada una de las secciones. 
+4. Para la primera sección, "¿Quienes Somos?", he utilizado etiquetas de párrafo <p> para que eltexto estuviera separado por saltos de línea. He colocado una lista desordenada <ul> para describir a cada uno de los miembros del equipo.También he utilizado elementos vacios como etiquetas de imagen <img> junto con sus atributos correspondientes para añadir las fotos de los mismos.
+5. Para la segunda sección, "Servicios", he usado  la etiqueta de parrafo de nuevo <p> y he añadido un enlace <a> con su atributo para indicar la dirección URL y así mostrar una imagen de las instalaciones.Además he elaborado una lista ordenada <ol> para mostrar los servicios ofertados por la empresa. El nombre de cada uno de ellos lo he resaltado con la etiqueta <strong>.
+6. Para la tercera sección, "Precios", he construido dos tablas <table>. La primera es la que informa de los precios de cada uno de los servicios prestados. Está compuesta por 6 filas <tr> y 1 columna <th>. La segunda informa de los precios de los bonos. Tiene 4 filas y 1 columna.Cada tabla tiene leyenda <caption> y cada una de las filas y columnas tiene su nombre.
+7.Para la cuarta y última sección, "Contacto", he elaborado un formulario <form> dando nombre a cada uno de los campos con etiquetas <label> e identificando el tipo de datos de cada campo.
+Al final de la web, he colocado un botón para volver al inicio.
