@@ -1,0 +1,156 @@
+<!Doctype.html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<tittle> Práctica Selectores III </tittle>
+		<style>
+			#contenedor{
+				background-color: #FFFFFF;
+				width: 1000px;
+				height: 2050px;
+				border: 2px solid #000000;
+			}
+			#foto{
+				width: 600px;
+				height: 400px;
+				margin: 10px;
+				margin-left: 190px;
+			}
+			#titulo{
+				width: 600px;
+				padding: 10px;
+				border: 2px solid #000000;
+				background-color: #e7a219; 
+				color: blue;
+				margin-left: 190px;
+			}
+			[value="subtitulo"]{
+				width: 400px;
+				padding: 10px;
+				border: 2px solid #000000;
+				background-color: red; 
+				color: blue;
+				margin: 10px 0px 10px 100px;
+			}
+			[value="ingrediente"]{
+				padding: 10px;
+				color: green;
+				margin: 5px;
+			}
+			ol>li{
+				padding: 10px;
+				color: #360;
+				margin: 5px;
+				width: 800px;
+			}
+			div>p{
+				width: 800px;
+				padding: 10px;
+				color: #A6ACAF;
+				margin: 5 90 5 90px;
+			}
+			#formulario{
+				padding: 10px;
+				color: #360;
+				margin-left: 40px;
+			}
+			form>div{
+				padding: 5px;
+				border: 1px solid black;
+				width: 400;
+				background-color: #D0D3D4
+			}
+			[value="inicio"]{
+				padding: 10px;
+				color: green;
+				margin: 5 380 10 380px;
+				border: 1px solid black;
+				width: 200;
+				background-color: #D0D3D4;
+			}
+			[value="Enviar"]{
+				margin-top: 5px;
+				margin-left: 40px;
+				color: red;
+				padding: 10px;
+			}			
+		</style>
+	</head>
+	<body>
+			<div id="contenedor">
+			<a name="inicio"></a>
+			<h1 id="titulo">Bizcocho de limón con virutas de chocolate</h1>
+			<img src="https://www.hola.com/imagenes/cocina/20171227103793/bizcocho-limon-virutas-chocolate-hk/0-521-8/biizcocho%20de%20limon-t.jpg" id="foto">
+			<div>
+				<p>
+					Si te gusta la repostería y eres de esas madres que prefieren elaborar sus propios dulces, para que ese capricho para ti y para tus hijos sea lo más natural posible, seguro que entre tus recetas estrella se encuentra la del bizcocho de limón.
+				</p>
+				<p>
+					Es una de las más sencillas de preparar y también se logra un delicioso tentempié de una forma rápida. Pero tal vez los pequeños de la casa estén un poco cansados del bizcocho de limón tradicional, por eso es momento de innovar y ponerte manos a la obra para cambiar la receta y sorprender en 2018 con nuevas propuestas.
+				</p>
+				<p>
+					Aunque este postre mantiene la esencia y los pasos del bizcocho clásico, incorpora un toque extra, el de las virutas de chocolate, que no sólo le darán un toque adicional de sabor sino también de textura. Si en casa os encanta este ingrediente, también las puedes usar para decorar por encima.
+				</p>
+			</div>
+			<div>
+				<h3 value="subtitulo">Ingredientes</h3>
+				<ul>
+					<li value="ingrediente">Tres huevos.</li>
+					<li value="ingrediente">Un yogur de limón.</li>
+					<li value="ingrediente">Dos vasos de yogur de azucar.</li>
+					<li value="ingrediente">1 vaso de yogur de aceite de girasol.</li>
+					<li value="ingrediente">1 sobre de levadura.</li>
+					<li value="ingrediente">Chocolate para las virutas (puedes elegir el tipo que más te guste).</li>
+					<li value="ingrediente">3 vasos de yogur de harina.</li>
+				</ul>
+			</div>
+			<div>
+				<h3 value="subtitulo">Preparación, paso a paso</h3>
+				<ol>
+					<li>-Ralla el chocolate para conseguir las virutas y reserva.</li>
+					<li>-Precalienta el horno a 180 grados para que esté listo cuando introduzcas la masa del bizcocho.</li>
+					<li>-En un bol mezcla bien el yogur de limón con el aceite.</li>
+					<li>-Añade a lo anterior el azúcar e integra bien.</li>
+					<li>-Agrega la harina tamizada, que previamente habrás integrado con la levadura en otro bol.</li>
+					<li>-Mezcla todo bien hasta conseguir una masa homogénea y añade las virutas de chocolate. Remueve un poco más.</li>
+					<li>-Cubre el molde con papel de horno para que no se pegue la masa e introdúcela dentro.</li>
+					<li>-Hornea durante unos 45 minutos y tendrás listo el bizcocho.</li>
+					<li>-La diferencia de las virutas y las pepitas de chocolate es que al ser las primeras menos pesadas será más fácil que se mantengan en el interior del bizcocho y no caigan hasta la base.</li>
+				</ol>
+			</div>
+			<div>
+				<h3 value="subtitulo">Tú opinión sobre nuestra receta</h3>
+				<p>Si quieres puedes enviar tu opinión sobre nuestra receta rellenando el formulario que aparece a continuación con tus datos personales. Muchas gracias por darnos tu opinión.</p>
+				<form  id="formulario" method="post" action="miservidor.php">
+					<div>
+						<label for="nombre">Nombre:</label>
+						<input type="text" name="nombre">
+					</div>
+					<div>
+						<label for="apellidos">Apellidos:</label>
+						<input type="text" name="apellidos">
+					</div>
+					<div>
+						<label for="telefono">Teléfono:</label>
+						<input type="number" name="teléfono">
+					</div>
+					<div>
+						<label for="mail">E-Mail:</label>
+						<input type="text" name="mail">
+					</div>
+					<div>
+						<label for="opinión">Tu opinión:</label>				
+						<select id="opinión">
+							<option value="excelente">Excelente</option>
+							<option value="buena">Buena</option>
+							<option value="Regular">Regular</option>
+							<option value="Mala">Mala</option>
+						</select>
+					</div>
+					<input type="submit" value="Enviar">
+				</form>
+				<a value="inicio"href="#inicio"><strong>Volver al inicio</strong></a>
+			</div>
+		</div>
+	</body>
+</html>
